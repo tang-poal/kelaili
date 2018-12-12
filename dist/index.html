@@ -6,6 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>科莱丽首页</title>
     <link rel="stylesheet" href="../dist/css/index.css">
+    <script src="../src/js/js.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
     </head>
     <body>
         <!---header-->
@@ -39,7 +41,7 @@
             <div class="dhl-right">
                 <input type="text">
                 <button>
-                    <img src="img/fdj.png" alt="">
+                    <img src="../src/img/fdj.png" alt="">
                 </button>
             </div>
         </div>
@@ -52,9 +54,25 @@
             </p>
         </div>
         <!--banner-->
-        <div id="banner">
-            <img src="img/banner-1.jpg" alt="">
+        <div class="container">
+                <div class="list" style="left:0px;">
+                 <!--<img src="../static/image/photo1.jpg" alt="5"/>-->
+                 <img src="../src/img/banner-1.jpg" alt="1"/>
+                 <img src="../src/img/banner-2.jpg" alt="2"/>
+                 <img src="../src/img/banner-3.jpg" alt="3"/>
+                 
+                 <!--<img src="../static/image/banner.jpg" alt="1"/>-->
+                </div>
+                <div class="pointer">
+                 <span index="1" class="on"></span>
+                 <span index="2"></span>
+                 <span index="3"></span>
+                
+                </div>
+                <a href="#" rel="external nofollow" rel="external nofollow" class="arrow right">></a>
+                <a href="#" rel="external nofollow" rel="external nofollow" class="arrow left"><</a>
         </div>
+               
         <!--
             推荐
         -->
@@ -281,9 +299,88 @@
                             <p>
                                 帮助中心
                             </p>
+                            <li>常见问题</li>
+                            <li>订单查询</li>
+                            <li>隐私条款</li>
+                            <li>网站地图</li>
                         </ol>
+            </div>
+            <div class="bottom-center">
+                <p>
+                    关注我们
+                </p>
+                <ul>
+                    <li><img src="../src/img/floating_weibo.png" alt=""></li>
+                    <li>
+                        <img src="../src/img/floating_wechat.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../src/img/zhuaji.png" alt="">
+                    </li>
+                </ul>
+                <span>
+                    <img src="../src/img/floating_qrcode.png" alt="">
+                </span>
+                <u>
+                    新客礼遇
+                </u>
+                <b>
+                    新用户注册并下单即可享<br
+                    >有兰蔻水漾轻透隔离露<br>10ml*2
+                </b>
+                <i>
+                    <img src="../src/img/footer-20180731.png" alt="">
+                </i>
+            </div>
+            <div class="bottom-right">
+                <p>
+                    报名订阅科莱丽电子邮件<br>享受会员特权
+                </p>
+                <input type="text">
+                <button>
+                    <a href="#">
+                        订阅
+                    </a>
+                </button>
+              
+                <span>
+                        <u>
+
+                        </u>
+                   <i>
+                        我同意依照本使用条款<a href="#">使用条款</a>和<a href="#">隐私政策</a>对我的个人信息进行收<br>
+                        集和使用；我已阅读并确认被给予机会理解该<a href="#">使用条<br>
+                        款</a>和<a href="#">隐私政策</a>的内容
+                   </i>
+
+                </span>
             </div>
            
         </div>
+        <!--zxiam-->
+        <div id="zxm">
+          
+                <span>
+                    <img src="../src/img/footer_payment_methods_icon.png" alt="">
+                            <p>安全支付保障</p>
+                </span>
+            <ul>
+                <li>网站地图</li>
+                <li>使用条款</li>
+                <li>隐私政策</li>
+                <li>Cookies政策</li>
+            </ul>
+            <b>
+                <a href="#">
+                        <img src="../src/img/police_badge_icon.gif" alt="">上海工商
+                </a>
+                <a href="#">
+                        <img src="../src/img/gongan_beian.png" alt="">
+                        沪公网安备 
+                </a>
+                沪IC备案08100043号 -33 © L'Oreal china欧莱雅(中国)有限版权公司
+            </b>
+        </div>
+            
     </body>
     </html>

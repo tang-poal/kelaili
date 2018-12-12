@@ -1,4 +1,4 @@
-// 引入gulp
+﻿// 引入gulp
 
 const gulp = require("gulp");
 const babel = require("gulp-babel");
@@ -43,9 +43,9 @@ gulp.task("sass",()=>{
       .pipe(gulp.dest("./dist/css"))
 })
 gulp.task( "timgmin",()=>{
-	return gulp.src("./src/images/*")
+	return gulp.src("./src/img/*")
 			
-	 .pipe( gulp.dest("./dist/images"))
+	 .pipe( gulp.dest("./dist/img"))
 })
 
 gulp.task("watch",()=>{

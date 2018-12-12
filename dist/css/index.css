@@ -150,11 +150,55 @@ input {
     color: #3d3f4e; }
 
 /*banner*/
-#banner {
-  height: 417px; }
-  #banner img {
-    height: 417px;
-    width: 1350px; }
+.container {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto; }
+  .container .list {
+    width: 3000px;
+    height: 400px;
+    position: absolute; }
+    .container .list img {
+      float: left;
+      width: 1350px;
+      height: 400px; }
+  .container .pointer {
+    position: absolute;
+    width: 100px;
+    bottom: 20px;
+    left: 250px; }
+    .container .pointer span {
+      cursor: pointer;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: #7b7d80;
+      border-radius: 50%;
+      border: 1px solid #fff; }
+    .container .pointer .on {
+      background: #28a4c9; }
+  .container .arrow {
+    position: absolute;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background: #727d8f;
+    color: #fff;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+    top: 180px;
+    display: none; }
+  .container .arrow:hover {
+    background: #0f0f0f; }
+  .container .left {
+    left: 0; }
+  .container .right {
+    right: 0; }
+  .container .container:hover .arrow {
+    display: block; }
 
 /*推荐*/
 #tj {
@@ -364,12 +408,11 @@ input {
   #bottom .bottom-left {
     height: 350px;
     width: 433px;
-    background: #3d3f4e;
-    margin-left: 99px; }
+    margin-left: 99px;
+    float: left; }
     #bottom .bottom-left ul {
       height: 175px;
       width: 166px;
-      background: yellow;
       float: left; }
       #bottom .bottom-left ul p {
         height: 20px;
@@ -385,9 +428,161 @@ input {
     #bottom .bottom-left ol {
       height: 175px;
       width: 70px;
-      background: #d00;
       float: right; }
       #bottom .bottom-left ol p {
         height: 20px;
         width: 70px;
-        font-size: 16px; }
+        font-size: 16px;
+        padding-top: 70px; }
+      #bottom .bottom-left ol li {
+        height: 30px;
+        width: 166x;
+        line-height: 40px;
+        font-size: 10px; }
+  #bottom .bottom-center {
+    height: 350px;
+    width: 230px;
+    float: left;
+    margin-left: 113px;
+    position: relative; }
+    #bottom .bottom-center p {
+      height: 18px;
+      width: 220px;
+      font-size: 16px;
+      margin-top: 70px; }
+    #bottom .bottom-center ul {
+      height: 36px;
+      width: 220px; }
+      #bottom .bottom-center ul li {
+        float: left; }
+        #bottom .bottom-center ul li img {
+          height: 30px;
+          width: 30px;
+          border: 1px solid #000;
+          margin: 30px 20px; }
+    #bottom .bottom-center span {
+      height: 80px;
+      width: 80px; }
+      #bottom .bottom-center span img {
+        height: 80px;
+        width: 80px; }
+    #bottom .bottom-center u {
+      height: 16px;
+      width: 120px;
+      font-size: 16px;
+      font-weight: 600px;
+      margin-top: 10px;
+      float: left; }
+    #bottom .bottom-center b {
+      height: 55px;
+      width: 134px;
+      font-size: 10px;
+      float: left;
+      margin-top: 10px; }
+    #bottom .bottom-center i {
+      height: 92px;
+      width: 92px; }
+      #bottom .bottom-center i img {
+        height: 80px;
+        width: 80px;
+        float: left;
+        position: absolute;
+        bottom: 0;
+        right: 0; }
+  #bottom .bottom-right {
+    height: 350px;
+    width: 415px;
+    float: right; }
+    #bottom .bottom-right p {
+      height: 80px;
+      width: 425px;
+      font-size: 30px;
+      color: #ee8603;
+      font-weight: 600;
+      margin-top: 70px; }
+    #bottom .bottom-right input {
+      height: 38px;
+      width: 290px;
+      border-radius: 5px;
+      float: left;
+      margin-top: 57px; }
+    #bottom .bottom-right button {
+      height: 40px;
+      width: 110px;
+      background: #262729;
+      border: 0;
+      border-radius: 5px;
+      margin-top: 57px;
+      float: right; }
+      #bottom .bottom-right button a {
+        font-size: 12px;
+        color: #fff; }
+    #bottom .bottom-right span {
+      height: 50px;
+      width: 415px;
+      font-size: 12px;
+      float: right; }
+      #bottom .bottom-right span u {
+        display: block;
+        height: 19px;
+        width: 19px;
+        border: 1px solid #000;
+        background: #fff;
+        float: left;
+        margin-left: 20px;
+        margin-top: 15px; }
+      #bottom .bottom-right span i {
+        height: 50px;
+        width: 350px;
+        float: right;
+        margin-right: 20px; }
+      #bottom .bottom-right span a {
+        font-size: 12px;
+        color: #000;
+        border-bottom: 1px solid #000; }
+
+#zxm {
+  height: 170px;
+  width: 100%;
+  border-top: 2px solid #e2e2e2;
+  background: #f7f7f8; }
+  #zxm span {
+    height: 20px;
+    width: 300px;
+    float: left;
+    margin-left: 105px;
+    margin-top: 60px; }
+    #zxm span img {
+      float: left; }
+    #zxm span p {
+      font-size: 12px;
+      color: #000;
+      float: left; }
+  #zxm ul {
+    height: 16px;
+    width: 400px;
+    float: right;
+    margin-right: 105px;
+    margin-top: 60px; }
+    #zxm ul li {
+      float: left;
+      padding: 0 10px; }
+  #zxm b {
+    display: block;
+    height: 30px;
+    width: 100%;
+    background: #ccc;
+    float: left;
+    font-size: 12px;
+    line-height: 30px; }
+    #zxm b a {
+      height: 30px;
+      width: 100px;
+      float: left;
+      color: #000;
+      line-height: 30px; }
+      #zxm b a img {
+        float: left;
+        padding-top: 5px; }
+    #zxm b a:nth-of-type(1) {
+      margin-left: 325px; }
